@@ -8,8 +8,8 @@
 #include "addons/RTDBHelper.h"
 
 // ================= PENGATURAN JARINGAN =================
-const char* ssid = "LABKESDA 2";
-const char* password = "hematologi";
+const char* ssid = "jemuran-pintar";
+const char* password = "12345678";
 
 // ================= PENGATURAN FIREBASE =================
 #define FIREBASE_URL "smart-home-jemuran-pintar-default-rtdb.asia-southeast1.firebasedatabase.app"
@@ -34,7 +34,7 @@ unsigned long sendDataPrevMillis = 0;
 const long interval = 2000; // Interval pengiriman data: 2 detik
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   
   // 1. Inisialisasi Sensor & Servo
   dht.begin();
